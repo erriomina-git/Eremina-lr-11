@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react" ;
+import React, { useState, useEffect } from 'react';
 
 function Counter() {
 
@@ -10,14 +10,15 @@ function Counter() {
 
     function decrement() {
         setCounter(prev => prev - 1);
+
     }
 
-return (
-    <div>
-        <h1>Counter: {counter}<h1/>
-        <button className="btn btn-primary" onClick={increment}>+<button/>
-        <button className="btn btn-danger" onClick={decrement}>-<button/>
-    <div/>
+    return (
+        <div>
+            <button className="btn btn-danger" id='btn2' onClick={decrement}>-</button>
+            <span>{counter}</span>
+            <button className="btn btn-primary" id='btn1' onClick={increment}>+</button>
+        </div>
     )
 }
 
